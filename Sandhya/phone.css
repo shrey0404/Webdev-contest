@@ -1,0 +1,135 @@
+/* navigation section */
+#navbar{
+    flex-direction: column;
+
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0 7px;
+    padding-bottom: 8px;
+}
+/* home section */
+#home{
+    height: 400px;
+    flex-direction: column;
+}
+#home::before{
+    height: 400px;
+  
+}
+.item{
+    padding-left: 28px;
+    padding-top:10px ;
+    padding-bottom: 11px;
+    padding-right: 12px;
+}
+home p{
+    font-size: 15px;
+    padding: 3px 68px;
+
+
+}
+
+/* services section */
+#services{
+flex-direction: column;
+
+}
+
+
+#services .box{
+
+}
+
+
+
+
+
+
+/* client section */
+
+#clients{
+    flex-wrap: wrap;
+/* overflow: hidden; */
+
+}
+
+#clients img{
+    width: 66px;
+    padding: 2px 4px;
+    height: auto;
+    
+}
+
+/* contact us section */
+
+
+  
+
+/* footer section */
+#socialimg{
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+
+/* utility calsses */
+.h-primary{
+    font-size: 26px;
+
+}
+.btn{
+    font-size: 12px;
+    padding: 4px 4xp;
+}
+
+
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
