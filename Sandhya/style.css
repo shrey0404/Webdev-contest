@@ -17,7 +17,7 @@
     /* position: relative; */
     top: 0px;
   display: flex;
-  align-items: center;
+  align-items: center; 
   box-shadow: rgba(210, 159, 7, 0.35) 0px  1px 3px 10px;
 }
 
@@ -114,7 +114,7 @@ padding: 20px 35px;
 #navbar ul li{
     /* color: aliceblue; */
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-family: 'Rubik', sans-serif;
     justify-content: flex-end;
     
@@ -153,8 +153,8 @@ padding: 20px 35px;
 #home::before{
     content: "";
     position:absolute; /*agr logo lo psnd nahi aay at ham is ki position fixed akr sakte hain*/
-    background: url('resto.jpeg');
-    height: 78%;
+    background: url('images/resto.jpeg');
+    height: 75%;
     width: 100%;
     z-index: -1;
     opacity: 2;
@@ -185,6 +185,7 @@ padding: 20px 35px;
     border: 2px solid black;
   margin: 8px;
   padding:12px 13px;
+  /* padding-top: 12px; */
   border-radius: 25px;
   
   background-color: rgb(169, 108, 9);
@@ -199,7 +200,7 @@ padding: 20px 35px;
 .h-primary-center{
     justify-content: center;
     display: flex;
-    padding: 0px 47px 0 25px;
+    padding: 0px 47px 0px 25px;
     font-size: 50px;
     align-items: center;
     color: rgb(169, 108, 9);
@@ -362,13 +363,44 @@ footer{
 }
 
 
-@media( min-width:375px )
+/* @media( min-width:375px ) and ( max-width:414px )
+{  #home{
+    padding: 0px 0px;
+}
+.item{
+    padding:0px 0px;
+   
+    flex-direction: column;
+}
+#services{
+    flex-direction: column;
+    
+    }
+.p{
+font-size: 18px;
+}
+.socialimg{
+   
+    flex-direction: column;
+    padding: 0px 0px;
+ 
+}
+    #navbar ul li
+    {
+        font-size: 0.8rem;
+        padding:0px 0px;
+        margin: auto;
+     
+    }
+}
+@media( min-width:414px ) 
 {
     #navbar ul li
     {
-        list-style: none;
         font-size: 0.8rem;
-        display:flex;
-        flex-direction:column;
+        
+        
+     
     }
-}
+} */
+
