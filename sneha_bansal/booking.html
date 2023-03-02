@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+    background-color: rgb(132, 171, 184);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 10px;
+    overflow: hidden;
+}
+.container{
+    background-color: rgb(118, 152, 163);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightblue;
+}
+    nav{
+background-color: #817e84;
+overflow: hidden;
+}
+nav a{
+box-shadow: inset 0 0 0 0 #54b3d6;
+text-decoration: none;
+float: right;
+padding: 10px 30px;
+color: white;
+gap: 20px;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+nav a:hover{
+box-shadow: inset 200px 0 0 0 #54b3d6;
+cursor: pointer;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    clip-path: circle(43%);
+    float: right;
+}
+input, select{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #243c47;
+    color: white;
+}
+button:hover{
+    background-color: #2a98cb;
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+    cursor: pointer;
+}
+</style>
+<header>
+    <nav>
+        <a href="#contact">Contact Us</a>
+        <a href="booking.html">Booking</a>
+        <a href="tour.html">Packages</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Create Account</a>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+<body>
+    <img src="https://img.freepik.com/free-vector/flat-vintage-travel-background_23-2148189177.jpg?size=338&ext=jpg&ga=GA1.2.364564762.1677505256&semt=ais">
+    <div class="container">
+    <form action="/booking" method="post">
+        <h1>
+            Book Your Trip
+        </h1>
+        <p>Name: <input type="text" name="name" id="name" required></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <fieldset>
+            <legend>Aadhar Card Details</legend>
+            <p>Aadhar No. : <input type="number" name="aadhar" id="aadhar" required></p>
+            <p>Aadhar Photo: <input type="file" name="file" id="file" required></p>
+        </fieldset>
+        <fieldset class="details">
+            <legend>Trip Details</legend>
+        <p>Place: <select name="place" id="place" required>
+            <option value="">--Select a Place--</option>
+            <option value="goa">Goa</option>
+            <option value="Kerala">Kerala</option>
+            <option value="varanasi">Varanasi</option>
+            <option value="udaipur">Udaipur</option>
+            <option value="kashmir">Kashmir</option>
+            <option value="darjeeling">Darjeeling</option>
+            <option value="manali">Manali</option>
+            <option value="shimla">Shimla</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+        </select></p>
+        <p>From Date: <input type="date" name="from_date" id="from_date" required></p>
+        <p>Till Date: <input type="date" name="till_date" id="till_date" required></p>
+        <p>Number of Person: <input type="number" name="number" id="number" required></p>
+    </fieldset>
+    <button type="submit">Submit</button>
+    </form>
+</div>
+
+    
+</body>
+</html>
