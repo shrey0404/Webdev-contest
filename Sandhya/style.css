@@ -1,0 +1,406 @@
+/* css rese */
+*{
+    margin: 0px;
+    padding: 0px; 
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --navbar-height:55px;
+
+
+}
+/* navigation bar */
+
+#navbar{
+    /* position: relative; */
+    top: 0px;
+  display: flex;
+  align-items: center; 
+  box-shadow: rgba(210, 159, 7, 0.35) 0px  1px 3px 10px;
+}
+
+#logo{
+margin:10px 10px;
+padding: 15px;
+ }
+#logo img{
+height:60px;
+
+ }
+
+#navbar ul{
+    display: flex;
+  /* padding: 10px  10px; */
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+ margin: 10px 600px;
+  
+  justify-content: space-evenly;
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 80%;
+width: 100%;
+z-index: -1;
+opacity: 1.2;
+
+}
+#social{
+    background-color: black;
+   
+    width: 100vw;
+     display: flex;
+     height: 20vh;
+     /* margin: 8px;
+     padding:12px 13px;
+     border-radius: 25px;  */
+     
+    
+}
+#social .socialimg{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+.p{
+    color: rgb(169, 108, 9);
+    text-align: center;
+    padding: 0px 100px;
+    margin: 50px 39px;
+    font-size: 34px;
+    box-shadow: rgba(210, 159, 7, 0.25) 0px  0px 5px 10px;
+    /* text-decoration: underline; */
+    /* border-radius: 45px; */
+    font-family: 'Rubik', sans-serif;
+}
+#res{
+    color: black;
+    background-color:rgb(210, 147, 11);
+    border-radius :8px ;
+    transform: skew(-10deg);
+}
+#res:hover{
+    background-color:black ;
+    color: rgb(210, 147, 11);
+    padding: 10px 8px;
+}
+
+
+
+#social img{
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+    /* display: block; */
+    margin: auto;
+    justify-content: space-between;
+}
+#social img:hover{
+width:30px;
+padding: 20px 35px;
+-webkit-transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  transform: scale(2.2);
+
+}
+#navbar ul li{
+    /* color: aliceblue; */
+    list-style: none;
+    font-size: 2.0rem;
+    font-family: 'Rubik', sans-serif;
+    justify-content: flex-end;
+    
+  
+}
+.item a{
+    color: rgb(169, 108, 9);
+    display: block;
+   padding-top:15px;
+   padding-left: 15px;
+   padding-bottom:8px ;
+   padding-right: 15px;
+   border-radius : 8px ;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(25, 22, 22);
+    background-color:rgb(210, 147, 11);
+    transform: skew(-10deg);
+    
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    
+    
+}
+
+#home::before{
+    content: "";
+    position:absolute; /*agr logo lo psnd nahi aay at ham is ki position fixed akr sakte hain*/
+    background: url('images/resto.jpeg');
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+
+}
+#home p{
+    color: rgb(169, 108, 9);
+    text-align: center;
+    font-size: 1.5rem;
+    /* text-decoration: underline; */
+    font-family: 'Rubik', sans-serif;
+    
+
+}
+#home h1{
+    color: rgb(169, 108, 9);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+   
+}
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+    
+    }
+#services .box{ 
+    border: 2px solid black;
+  margin: 8px;
+  padding:12px 13px;
+  /* padding-top: 12px; */
+  border-radius: 25px;
+  
+  background-color: rgb(169, 108, 9);
+}
+#services .box:hover{
+    /* padding: 15px 18px; */
+    border: 4px solid black;
+    border-radius: 45px;
+    box-shadow: 10px 10px 8px rgb(17, 15, 11);
+
+}
+.h-primary-center{
+    justify-content: center;
+    display: flex;
+    padding: 0px 47px 0px 25px;
+    font-size: 50px;
+    align-items: center;
+    color: rgb(169, 108, 9);
+}
+#services .box img{
+    height: 150px;
+  display: block;
+  margin: auto;
+
+    
+}
+service .box p{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* client section */
+#client{
+    height: 344px;
+}
+#clients{
+display: flex;
+justify-content: center;
+align-items:center ;
+}
+  #clients img{
+    height:144px;
+    padding: 20px;
+    margin: 12px;
+  }
+
+/* #client-section{
+    height: 144px;
+} */
+#clients::before{
+    content: "";
+    position:fixed;
+       /* background: url('bg1.jpg'); */
+       width: 100%;
+       height: 52%;
+       z-index: -1;
+       opacity: .55;
+}
+/* contact details */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity:0.95;
+    background-color: black;
+    display: flex;
+    /* background: url('contact.jpg') no-repeat  center  ; */
+   justify-items: center;
+   align-items: center;
+}
+
+footer{
+    background: rgb(169, 108, 9);
+    color: black;
+    padding: 24px 20px;
+   
+   
+
+}
+#contac-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  34px;
+    
+}
+
+#contact-box input{
+    width: 100%;
+    
+    height:40%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+   display:flex;
+    
+}
+#contact-box .form-grp{
+    width: 50%;
+    color:rgb(169, 108, 9);
+    padding: .3rem;
+
+}
+#contact-box .form-grp{
+    border-radius: 35px;
+    font-size: 1.1rem;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(169, 108, 9);
+    padding:10px 15px;
+     justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+ 
+
+/* utility class */
+.h-primary{
+    font-size: 3.8rem;
+    color:rgb(169, 108, 9);
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.2rem;
+    color:black;
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid  black;
+    background-color:rgb(169, 108, 9);
+    color: black;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+   cursor: pointer;
+   opacity:0.8;
+}
+.btn:hover{
+    color: rgb(25, 22, 22);
+    background-color:rgb(215, 138, 15);
+    opacity:4;
+    transform: skew(-10deg);
+    /* transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%); */
+   
+}
+
+.center{
+    text-align: center;
+
+}
+#conatct-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px  67px;
+    margin: 56px 34px ;
+}
+
+
+/* @media( min-width:375px ) and ( max-width:414px )
+{  #home{
+    padding: 0px 0px;
+}
+.item{
+    padding:0px 0px;
+   
+    flex-direction: column;
+}
+#services{
+    flex-direction: column;
+    
+    }
+.p{
+font-size: 18px;
+}
+.socialimg{
+   
+    flex-direction: column;
+    padding: 0px 0px;
+ 
+}
+    #navbar ul li
+    {
+        font-size: 0.8rem;
+        padding:0px 0px;
+        margin: auto;
+     
+    }
+}
+@media( min-width:414px ) 
+{
+    #navbar ul li
+    {
+        font-size: 0.8rem;
+        
+        
+     
+    }
+} */
+
